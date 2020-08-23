@@ -35,8 +35,6 @@ services:
       - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       - MYSQL_DATABASE=${DB_DATABASE}
-      - MYSQL_USER=${DB_USERNAME}
-      - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
       - TZ=${TZ}
     ports:
@@ -48,8 +46,6 @@ services:
       - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       - MYSQL_DATABASE=${DB_TESTING_DATABASE}
-      - MYSQL_USER=${DB_TESTING_USERNAME}
-      - MYSQL_PASSWORD=${DB_TESTING_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${DB_TESTING_PASSWORD}
       - TZ=${TZ}
     ports:
