@@ -15,6 +15,10 @@ services:
       - DB_DATABASE=${DB_DATABASE}
       - DB_USERNAME=${DB_USERNAME}
       - DB_PASSWORD=${DB_PASSWORD}
+      - DB_TESTING_HOST=db-testing
+      - DB_TESTING_DATABASE=${DB_TESTING_DATABASE}
+      - DB_TESTING_USERNAME=${DB_TESTING_USERNAME}
+      - DB_TESTING_PASSWORD=${DB_TESTING_PASSWORD}
       - TZ=${TZ}
   web:
     image: nginx:1.17-alpine
