@@ -17,4 +17,4 @@ RUN apk upgrade --update && \
   composer global require hirak/prestissimo
 
 # JS
-RUN apk --no-cache --update add nodejs nodejs-npm yarn
+RUN apk --no-cache --update add nodejs npm yarn
