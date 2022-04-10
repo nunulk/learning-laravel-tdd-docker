@@ -5,7 +5,7 @@
 Run the following command in docker directory.
 
 ```sh
-$ docker-compose build
+$ docker compose build
 ```
 
 ## Run
