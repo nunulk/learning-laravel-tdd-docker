@@ -15,4 +15,4 @@ RUN apk upgrade --update && \
   docker-php-ext-install intl pdo_mysql mbstring zip bcmath
 
 # JS
-RUN apk --no-cache --update add nodejs nodejs-npm yarn
+RUN apk --no-cache --update add nodejs npm yarn
